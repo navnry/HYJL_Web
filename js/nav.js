@@ -1,0 +1,13 @@
+$("#open-menu").on("click", function () {
+    $(".nav").addClass("open")
+});
+$(".nav").on("click", function (e) {
+    $(this).removeClass("open");
+    e.stopPropagation()
+});
+$("#close-menu").on("click", function () {
+    $(".nav").removeClass("open")
+})
+$(".nav-wrapper").on("click", function (e) {
+    e.stopPropagation()
+})
