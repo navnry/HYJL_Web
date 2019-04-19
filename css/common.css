@@ -1,7 +1,9 @@
 html, body {
     background: #ffffff;
 }
-
+body{
+    padding-bottom: .98rem;
+}
 * {
     box-sizing: border-box;
     font-size: 0;

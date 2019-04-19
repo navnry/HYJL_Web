@@ -75,16 +75,136 @@
     </div>
 </div>
 <div class="block">
-    <div class="container">
-        <div class="row">
+    <div class="container container-1">
+        <div class="main">
             <div class="column">
                 <div class="column-title clearfix">
                     <h2>企业印象</h2>
                     <a href="">MORE+</a>
                 </div>
                 <div class="column-box">
-
+                    <div class="pic">
+                        <img src="images/home/img01.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <p>
+                            华医金良，中医诊疗与现代康复的倡导者和践行者，集脊柱侧弯、形体矫正、颈腰治疗、会员药房、骨创康复、中风康复于一体，是全国首家现代中医康复医疗连锁机构，由民进长沙市委招商引资项目企业——湖南华医金良医疗连锁发展有限公司创办。</p>
+                        <p>推崇“被动治疗＋主动训练”的现代中医康复理念，目前，华医金良在长沙已开设三家规模各超1300平，含中西药房在内，集预防、治疗、康复、调理为一体的医疗连锁机构。</p>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container container-2">
+        <div class="title">
+            <h2>您目前的情况</h2>
+        </div>
+        <div class="condition">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="pic"><img src="images/home/img1.png" alt=""></div>
+                        <div class="con">
+                            <p>颈肩腰腿痛</p>
+                            <a href="">颈椎病</a>
+                            <a href="">腰椎病</a>
+                            <a href="">肩周炎</a>
+                            <a href="">膝关节炎</a>
+                            <a class="zixun" href="">与医生一对一咨询</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pic"><img src="images/home/img1.png" alt=""></div>
+                        <div class="con">
+                            <p>脊柱侧弯</p>
+                            <a href="">如何确诊</a>
+                            <a href="">侧弯病因</a>
+                            <a href="">治疗误区</a>
+                            <a href="">最佳疗法</a>
+                            <a class="zixun" href="">与医生一对一咨询</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pic"><img src="images/home/img1.png" alt=""></div>
+                        <div class="con">
+                            <p>形体矫正</p>
+                            <a href="">驼背</a>
+                            <a href="">高低肩</a>
+                            <a href="">O型腿</a>
+                            <a href="">富贵包</a>
+                            <a class="zixun" href="">与医生一对一咨询</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container container-3"></div>
+    <div class="container container-4">
+        <div class="main">
+            <div class="title">
+                <p>中医诊疗+现代康复</p>
+                <h2><b>4大</b>核心技术 彰显现代中医康复疗效</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container container-5">
+        <div class="main">
+            <div class="title">
+                <h2>特聘名医专家团</h2>
+            </div>
+            <div class="doctor-box">
+                <div class="doctor-main">
+                    <div class="pic"><img src="images/home/doc1.png" alt=""></div>
+                </div>
+                <div class="doctor-sub">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/home/doc2.png" alt="">
+                                <span>王亦然</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/home/doc2.png" alt="">
+                                <span>王亦然</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/home/doc2.png" alt="">
+                                <span>王亦然</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/home/doc2.png" alt="">
+                                <span>王亦然</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/home/doc2.png" alt="">
+                                <span>王亦然</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="see-more">+</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container container-6">
+        <div class="main">
+            <div class="title">
+                <h2>华医金良<b>经典案例</b>，看他们的康复之路</h2>
             </div>
         </div>
     </div>
@@ -127,7 +247,9 @@
 <script src="js/nav.js"></script>
 <script>
     $(function () {
-        var banner = new Swiper(".banner .swiper-container", {
+        var w = parseInt($("html").css("font-size")) / 100;
+        console.log(w);
+        var bannerSwiper = new Swiper(".banner .swiper-container", {
             loop: true,
             speed: 800,
             autoplay: {
@@ -138,5 +260,31 @@
                 el: ".banner .swiper-pagination"
             }
         })
+
+        var conditionSwiper = new Swiper('.condition .swiper-container', {
+            effect: 'coverflow',
+            loop: true,
+            loopAdditionalSlides: 1,
+            slideToClickedSlide: true,
+            speed: 800,
+            initialSlide: 1,
+            centeredSlides: true,
+            slidesPerView: 1.81,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            coverflowEffect: {
+                rotate: 0,
+                stretch: -w * 34,
+                depth: 0,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: ".condition .swiper-pagination"
+            }
+        });
+
     })
 </script>

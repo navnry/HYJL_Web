@@ -6,7 +6,9 @@ body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abb
 ol, li, ul, dl, dt, dd {
     list-style: none;
 }
-
+*{
+    box-sizing: border-box;
+}
 .fl {
     float: left;
 }
@@ -87,7 +89,7 @@ a:hover {
     outline: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 ,b,strong{
     font-size: 100%;
     font-family: 'Microsoft YaHei', sans-serif;
     font-weight: normal;
