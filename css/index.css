@@ -1,6 +1,14 @@
-.main {
-    width: 100%;
-    padding: 0 .2rem;
+@charset "UTF-8";
+
+@font-face {
+    font-family: "xiqiyangyang";
+    src: url("../font/xiqiyangyang/xiqiyangyang.woff") format("woff"),
+    url("../font/xiqiyangyang/xiqiyangyang.ttf") format("truetype"),
+    url("../font/xiqiyangyang/xiqiyangyang.eot") format("embedded-opentype"),
+    url("../font/xiqiyangyang/xiqiyangyang.svg") format("svg"),
+    url("../font/xiqiyangyang/xiqiyangyang.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 .container .title {
@@ -9,12 +17,16 @@
 
 .container .title p {
     font-size: .3rem;
+    line-height: .3rem;
     color: #666666;
+    padding: .1rem 0;
 }
 
 .container .title h2 {
     font-size: .36rem;
+    line-height: .36rem;
     color: #333333;
+    padding: .1rem 0;
 }
 
 .container .title b {
@@ -41,8 +53,8 @@
 }
 
 .banner .swiper-pagination-bullet {
-    width: .18rem;
-    height: .18rem;
+    /*width: .18rem;*/
+    /*height: .18rem;*/
     border: .02rem solid #d73136;
     background: rgba(0, 0, 0, 0);
     opacity: 1;
@@ -62,10 +74,28 @@
     line-height: .36rem;
     color: #333333;
     float: left;
-    padding: .15rem 0;
+    padding: .15rem .1rem;
+    position: relative;
 }
-
-.column .column-title h2:after {
+.column .column-title h2:nth-child(2){
+    padding-left: .07rem;
+}
+.column .column-title h2:nth-child(2):before {
+    content: '';
+    display: block;
+    width: .02rem;
+    height: .34rem;
+    background: #555555;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.column .column-title h2.on{
+    color: #c0262a;
+}
+.column .column-title h2.on:after {
     content: '';
     display: block;
     width: 1.48rem;
@@ -73,7 +103,7 @@
     background-color: #c0262a;
     position: absolute;
     bottom: -.02rem;
-    left: 0;
+    left: .07rem;
 }
 
 .column .column-title a {
@@ -191,7 +221,7 @@
 
 .condition .swiper-pagination-bullet {
     width: .6rem;
-    height: .07rem;
+    height: .05rem;
     background: #ffffff;
     border-radius: 0;
     opacity: 1;
@@ -205,15 +235,192 @@
 /**/
 /**/
 /**/
+.container-3 {
+    padding: .5rem 0 .75rem 0;
+}
+
+.container-3 .list-tab {
+    text-align: center;
+    margin: .3rem 0;
+}
+
+.container-3 .list-tab ul {
+    /*width: 7.14rem;*/
+    display: inline-block;
+}
+
+.container-3 .list-tab ul li {
+    width: 2.1rem;
+    height: .7rem;
+    background-color: #eeeeee;
+    text-align: center;
+    line-height: .72rem;
+    color: #666666;
+    font-size: .24rem;
+    float: left;
+    margin: .105rem .13rem;
+    /*margin-right: .26rem;*/
+    /*margin-bottom: .21rem;*/
+}
+
+.container-3 .list-tab ul li.active {
+    background: #c0262a;
+    color: #ffffff;
+}
+
+.container-3 .list-box {
+    width: 100%;
+    padding: .2rem;
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.19);
+    position: relative;
+}
+
+.container-3 .list-item {
+    width: 100%;
+    display: none;
+}
+
+.container-3 .list-item.active {
+    display: block;
+}
+
+.container-3 .list-item h3 {
+    font-size: .3rem;
+    color: #333333;
+    padding-bottom: .3rem;
+}
+
+.container-3 .list-item p {
+    font-size: .24rem;
+    color: #666666;
+}
+
+.container-3 .list-item-tip {
+    padding-top: .4rem;
+}
+
+.container-3 .list-item-tip-left ol li {
+    width: 3.87rem;
+    height: 1.45rem;
+    border-radius: .75rem;
+    border: solid 1px #cccccc;
+    margin-bottom: .25rem;
+}
+
+.container-3 .list-item-tip-left .num {
+    width: 1.27rem;
+    font-size: .94rem;
+    line-height: 1.4rem;
+    color: #c0262a;
+    padding: 0 .25rem;
+    font-family: xiqiyangyang, sans-serif;
+}
+
+.container-3 .list-item-tip-left .con {
+    width: 2.5rem;
+    height: 100%;
+    display: table;
+}
+
+.container-3 .list-item-tip-left .con > div {
+
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.container-3 .list-item-tip-left .con span {
+    font-size: .3rem;
+    color: #333333;
+    display: block;
+    /*padding: .2rem 0 .1rem 0;*/
+}
+
+.container-3 .list-item-tip-left .con p {
+    font-size: .24rem;
+    color: #666666;
+}
+
+.container-3 .list-item-tip-right {
+    width: 2.3rem;
+    height: 5rem;
+    background-image: linear-gradient(90deg, #dddddd 10%, rgba(0, 0, 0, 0) 10%), linear-gradient(#dddddd 10%, rgba(0, 0, 0, 0) 10%);
+    background-size: .15rem .15rem;
+    text-align: center;
+    padding-top: 1.2rem;
+}
+
+.container-3 .list-item-tip-right p {
+    font-size: .36rem;
+    color: #333333;
+}
+
+.container-3 .list-item-tip-right span {
+    font-size: .24rem;
+    color: #333333;
+    display: block;
+    margin-top: .2rem;
+}
+
+.container-3 .list-item-tip-right a {
+    display: inline-block;
+    width: 1.92rem;
+    height: .59rem;
+    line-height: .59rem;
+    text-align: center;
+    background-color: #c0262a;
+    font-size: .24rem;
+    color: #ffffff;
+    margin-top: .7rem;
+}
+
+/**/
+/**/
+/**/
 .container-4 {
     background: #eeeeee;
+    padding: .25rem 0 .55rem 0;
+}
+
+.container-4 .list-box {
+    /*width: 8rem;*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+}
+
+.container-4 .list-item {
+    width: 50%;
+    text-align: center;
+    /*margin-bottom: .8rem;*/
+    float: left;
+    /*margin-right: .9rem;*/
+    padding: 0 .2rem;
+}
+
+.container-4 .list-item .pic {
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.container-4 .list-item p {
+    font-size: .3rem;
+    color: #333333;
+}
+
+.container-4 .list-item span {
+    font-size: .24rem;
+    color: #666666;
 }
 
 /**/
 /**/
 /**/
 .container-5 {
-
+    padding-top: .6rem;
+    padding-bottom: .35rem;
 }
 
 .container-5 .doctor-main {
@@ -221,6 +428,7 @@
     height: 5.36rem;
     padding: .14rem;
     border: solid .02rem #c0262a;
+    margin: .5rem 0 .35rem 0;
 }
 
 .container-5 .doctor-main .pic {
@@ -278,10 +486,145 @@
     line-height: 2.9rem;
     color: #eeeeee;
 }
+
 /**/
 /**/
 /**/
 /**/
 .container-6 {
     background: #fdf3f3;
+    padding-top: .4rem;
+    padding-bottom: .65rem;
+}
+
+/**/
+/**/
+/**/
+.container-7{
+    padding-top: .4rem;
+}
+/**/
+/**/
+/**/
+/**/
+.container-8 {
+    /*padding: .4rem 0 .65rem 0;*/
+    padding-top: .4rem;
+}
+
+.container-7:after,
+.container-8:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: .2rem;
+    background: #eeeeee;
+}
+
+.container-8 .column-box {
+    padding-bottom: .65rem;
+}
+
+.container-8 .news-top {
+    padding: .5rem 0 .2rem 0;
+}
+
+.container-8 .news-top .pic {
+    width: 2.9rem;
+    height: 2rem;
+    margin: 0;
+}
+
+.container-8 .news-top .con {
+    width: 3.8rem;
+    height: 2rem;
+}
+
+.container-8 .news-top .con h5 {
+    font-size: .3rem;
+    color: #333333;
+}
+
+.container-8 .news-top .con p {
+    font-size: .24rem;
+    color: #666666;
+}
+
+.container-8 .news-top .pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-8 .news-list ul li {
+    position: relative;
+    /*padding: .35rem 0;*/
+    border-bottom: dashed .02rem #cccccc;
+}
+
+.container-8 .news-list ul li i {
+    font-size: .24rem;
+    line-height: .94rem;
+    color: #c0262a;
+    position: absolute;
+    left: .1rem;
+}
+
+/*.container-8 .news-list ul li:before {*/
+/*content: '';*/
+/*display: block;*/
+/*width: .22rem;*/
+/*height: .21rem;*/
+/*background: url("../images/base/list_style.png") center center/cover no-repeat;*/
+/*position: absolute;*/
+/*top: 0;*/
+/*bottom: 0;*/
+/*left: .1rem;*/
+/*margin: auto;*/
+/*}*/
+
+.container-8 .news-list ul li a {
+    display: block;
+    font-size: .24rem;
+    line-height: .94rem;
+    color: #333333;
+    padding: 0 .45rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/**/
+/**/
+/**/
+/**/
+.container-9 {
+    padding-top: .4rem;
+}
+
+.container-9 .column-box {
+    width: 100%;
+    height: 6rem;
+    margin: .6rem 0;
+    position: relative;
+}
+
+.container-9 .column-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-9 .column-box span {
+    display: block;
+    width: 100%;
+    height: .78rem;
+    background: #c0262a;
+    position: absolute;
+    bottom: 0;
+    font-size: .3rem;
+    color: #ffffff;
+    line-height: .78rem;
+    padding: 0 .2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
