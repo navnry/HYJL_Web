@@ -40,9 +40,42 @@
     <div class="nav-wrapper">
         <ul>
             <li><a href="index.html">首页</a></li>
-            <li><a href="index.html">企业印象</a></li>
-            <li><a href="index.html">特色诊疗</a></li>
-            <li><a href="index.html">核心技术</a></li>
+            <li>
+                <i></i>
+                <a href="javascript:void (0)">企业印象</a>
+                <div class="sub_menu">
+                    <ol>
+                        <li><a href="">企业印象</a></li>
+                        <li><a href="">视频介绍</a></li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <i></i>
+                <a href="javascript:void (0)">特色诊疗</a>
+                <div class="sub_menu">
+                    <ol>
+                        <li><a href="">脊柱侧弯</a></li>
+                        <li><a href="">形体矫正</a></li>
+                        <li><a href="">颈腰治疗</a></li>
+                        <li><a href="">会员药房</a></li>
+                        <li><a href="">骨创康复</a></li>
+                        <li><a href="">中风康复</a></li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <i></i>
+                <a href="javascript:void (0)">核心技术</a>
+                <div class="sub_menu">
+                    <ol>
+                        <li><a href="">金良整脊术</a></li>
+                        <li><a href="">古针运动疗法</a></li>
+                        <li><a href="">中药外治内疗法</a></li>
+                        <li><a href="">SAS弱链疗法</a></li>
+                    </ol>
+                </div>
+            </li>
             <li><a href="index.html">专家团队</a></li>
             <li><a href="index.html">先进设备</a></li>
             <li><a href="index.html">康复案例</a></li>
@@ -706,6 +739,7 @@
 </html>
 <script src="js/swiper.min.js"></script>
 <script src="js/nav.js"></script>
+<script src="js/index.js"></script>
 <script>
     $(function () {
         var w = parseInt($("html").css("font-size")) / 100;
@@ -755,29 +789,10 @@
                 prevEl: '.column-item .swiper-button-prev',
             },
         });
-
         $(window).resize(function () {
             bannerSwiper.update();
             conditionSwiper.update();
             huanSwiper.update();
         })
-    })
-</script>
-<script>
-    $(".container-3 .list-tab ul li").on("click", function () {
-        var index = $(this).index();
-        $(this).addClass("active").siblings().removeClass("active");
-        $(".container-3 .list-item").eq(index).addClass("active").siblings().removeClass("active")
-    });
-
-    $(".column-title h3").on("click", function () {
-        var index = $(this).index();
-        $(this).addClass("on").siblings().removeClass("on");
-        $(".container-7  .column-item").eq(index).addClass("active").siblings().removeClass("active")
-    });
-    $(".container-6 .list-tab ul li").on("click", function () {
-        var index = $(this).index();
-        $(this).addClass("active").siblings().removeClass("active");
-        $(".container-6 .list-item").eq(index).addClass("active").siblings().removeClass("active")
     })
 </script>

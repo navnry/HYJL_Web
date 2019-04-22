@@ -13,4 +13,8 @@ $(".nav-wrapper").on("click", function (e) {
 }).on("touchmove", function (e) {
     e.stopPropagation()
 });
+$(".nav-wrapper>ul>li").on("click", function () {
+    $(this).children(".sub_menu").stop().slideToggle(300).siblings("i").toggleClass("on")
+})
+
 

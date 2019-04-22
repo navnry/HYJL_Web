@@ -202,9 +202,6 @@ body::-webkit-scrollbar {
 .nav-close i {
     display: block;
     font-size: .46rem;
-    /*width: .22rem;*/
-    /*height: .4rem;*/
-    /*background: url("../images/base/menu_close.png") center center/cover no-repeat;*/
     float: right;
 }
 
@@ -213,15 +210,43 @@ body::-webkit-scrollbar {
     height: calc(100% - .86rem);
     overflow: auto;
     float: right;
-    padding: 0 .4rem;
+    padding: 0 .35rem 0 .4rem;
     background: #ffffff;
 }
 
+.nav-wrapper ul li {
+    position: relative;
+}
+
+.nav-wrapper ul li i {
+    display: block;
+    width: .3rem;
+    height: .3rem;
+    background: url("../images/base/jia.png")center center /cover no-repeat;
+    position: absolute;
+    right: .1rem;
+    top: .3rem;
+    transition: all .1s;
+}
+.nav-wrapper ul li i.on{
+    background: url("../images/base/jian.png")center center /cover no-repeat;
+    transition: all .1s;
+}
 .nav-wrapper ul li a {
     font-size: .3rem;
     color: #333333;
     line-height: .9rem;
     display: block;
+}
+
+.sub_menu {
+    padding-left: .2rem;
+    display: none;
+}
+
+.sub_menu ol li a {
+    font-size: .26rem;
+    line-height: .6rem;
 }
 
 .nav-h {
