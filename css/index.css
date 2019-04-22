@@ -790,19 +790,6 @@
     left: .1rem;
 }
 
-/*.container-8 .news-list ul li:before {*/
-/*content: '';*/
-/*display: block;*/
-/*width: .22rem;*/
-/*height: .21rem;*/
-/*background: url("../images/base/list_style.png") center center/cover no-repeat;*/
-/*position: absolute;*/
-/*top: 0;*/
-/*bottom: 0;*/
-/*left: .1rem;*/
-/*margin: auto;*/
-/*}*/
-
 .container-8 .news-list ul li a {
     display: block;
     font-size: .24rem;

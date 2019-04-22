@@ -778,21 +778,20 @@
                 el: ".condition .swiper-pagination"
             }
         });
-        var huanSwiper = new Swiper('.column-item .swiper-container', {
+        var strSwiper = new Swiper('.column-item .swiper-container', {
             speed:500,
-            // loop:true,
             slidesPerView: 2,
             slidesPerColumn: 2,
             spaceBetween: w*20,
             navigation: {
                 nextEl: '.column-item .swiper-button-next',
                 prevEl: '.column-item .swiper-button-prev',
-            },
+            }
         });
         $(window).resize(function () {
             bannerSwiper.update();
             conditionSwiper.update();
-            huanSwiper.update();
+            strSwiper.update();
         })
     })
 </script>

@@ -15,6 +15,6 @@ $(".nav-wrapper").on("click", function (e) {
 });
 $(".nav-wrapper>ul>li").on("click", function () {
     $(this).children(".sub_menu").stop().slideToggle(300).siblings("i").toggleClass("on")
-})
+});
 
 

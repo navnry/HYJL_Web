@@ -4,14 +4,59 @@
     height: 4.5rem;
 }
 
+.banner .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.banner .swiper-pagination {
+    bottom: .2rem;
+}
+
+.banner .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 .03rem;
+}
+
+.banner .swiper-pagination-bullet {
+    /*width: .18rem;*/
+    /*height: .18rem;*/
+    border: .02rem solid #d73136;
+    background: rgba(0, 0, 0, 0);
+    opacity: 1;
+}
+
+.banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #d73136;
+}
+
 .container .title {
     text-align: center;
+    padding: .25rem 1rem;
+}
+
+.container .title a {
+    font-size: .5rem;
+    color: #333333;
 }
 
 .container .title h2 {
     font-size: .36rem;
-    line-height: .36rem;
+    line-height: .5rem;
     color: #333333;
+}
+
+.container .title i {
+    font-size: .24rem;
+    line-height: .5rem;
+    color: #666666;
+}
+
+.block.news {
+    padding-bottom: .3rem;
+}
+
+.block.news .container {
+    padding-top: .25rem;
 }
 
 .block.news .list ul li {
@@ -29,12 +74,13 @@
     height: 100%;
 }
 
-.block.news .list ul li .con{
+.block.news .list ul li .con {
     width: 5.2rem;
     height: 1.3rem;
     padding-left: .3rem;
     position: relative;
 }
+
 .block.news .list ul li .con h5 {
     font-size: .3rem;
     line-height: .3rem;
@@ -62,4 +108,280 @@
     position: absolute;
     bottom: .08rem;
     left: .3rem;
+}
+
+.block.news .time {
+    font-size: .24rem;
+    color: #999999;
+    text-align: center;
+}
+
+.block.news .context {
+    text-align: center;
+    padding: .3rem 0;
+}
+
+.block.news .context p {
+    font-size: .24rem;
+    color: #666666;
+    text-indent: .48rem;
+    padding: .05rem 0;
+    text-align: left;
+}
+
+.block.news .context img {
+    width: 80%;
+    padding: .2rem 0;
+}
+
+.block.news .fanpian a {
+    display: block;
+    font-size: .26rem;
+    color: #666666;
+    line-height: .5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.block.location .list {
+    padding: 0 .3rem;
+}
+
+.block.location .list-item {
+    text-align: center;
+    padding: .5rem 1.3rem;
+    border-bottom: 1px solid #cccccc;
+}
+
+.block.location .list-item .pic {
+    width: 1.74rem;
+    height: 1.74rem;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.block.location .list-item .pic i {
+    font-size: 1.1rem;
+    line-height: 1.74rem;
+}
+
+.block.location .list-item .name {
+    font-size: .3rem;
+    line-height: .3rem;
+    color: #333333;
+    padding: .4rem 0 .16rem 0;
+}
+
+.block.location .list-item .address,
+.block.location .list-item .tel {
+    font-size: .24rem;
+    color: #666666;
+    line-height: .36rem;
+}
+
+.block.location .list-item .tel a {
+    font-size: .24rem;
+    color: #666666;
+    line-height: .36rem;
+}
+
+.block.location .list-item .goto {
+    padding-top: .3rem;
+    line-height: .44rem;
+}
+
+.block.location .list-item .goto i {
+    font-size: .4rem;
+    color: #84b9fa;
+    padding-right: .15rem;
+}
+
+.block.location .list-item .goto a {
+    font-size: .3rem;
+    color: #84b9fa;
+}
+
+.block.location .wexin {
+    text-align: center;
+    padding: .5rem 0;
+}
+
+.block.location .wexin img {
+    width: 4.34rem;
+    height: 4.34rem;
+}
+
+.block.location .wexin p {
+    font-size: .24rem;
+    color: #666666;
+}
+
+/**/
+/**/
+/**/
+.block.welfare {
+    padding-bottom: .25rem;
+}
+
+.block.welfare .list-top {
+    width: 100%;
+    height: 7.2rem;
+    background: #eeeeee;
+}
+
+.block.welfare .list-top .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.block.welfare .list-top .swiper-slide {
+    padding: .1rem;
+}
+
+.block.welfare .list-top .swiper-slide .pic {
+    width: 100%;
+    height: 4.7rem;
+}
+
+.block.welfare .list-top .swiper-slide .pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.block.welfare .list-top .swiper-slide .con {
+    text-align: center;
+    height: 2.3rem;
+    overflow: auto;
+}
+
+.block.welfare .list-top .swiper-slide .con::-webkit-scrollbar {
+    display: none;
+}
+
+.block.welfare .list-top .swiper-slide span {
+    display: block;
+    font-size: .3rem;
+    color: #333333;
+    line-height: .3rem;
+    padding: .3rem 0 .2rem 0;
+}
+
+.block.welfare .list-top .swiper-slide p {
+    font-size: .24rem;
+    color: #666666;
+    line-height: .3rem;
+}
+
+.block.welfare .list-bot {
+    margin: .3rem 0;
+}
+
+.block.welfare .list-bot .swiper-slide {
+    width: 1.98rem;
+    position: relative;
+}
+
+.block.welfare .list-bot .swiper-slide.swiper-slide-thumb-active:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/others/icon_search.png") center center /cover no-repeat;
+    left: 0;
+    top: 0;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+.block.anli .list-nav {
+    overflow: hidden;
+}
+
+.block.anli .list-nav ul {
+    width: 7.32rem;
+}
+
+.block.anli .list-nav ul li {
+    width: 2.14rem;
+    height: .70rem;
+    border-radius: .35rem;
+    border: solid 1px #cccccc;
+    line-height: .7rem;
+    text-align: center;
+    float: left;
+    margin-right: .3rem;
+    margin-bottom: .3rem;
+}
+
+.block.anli .list-nav ul li a {
+    font-size: .3rem;
+    display: block;
+    color: #333333;
+}
+
+.block.anli .list-nav ul li.on {
+    background: #c0262a;
+    border-radius: 0;
+    border-color: #c0262a;
+}
+
+.block.anli .list-nav ul li.on a {
+    color: #ffffff;
+}
+
+.block.anli .list-item ul li {
+    width: 100%;
+    height: 6.6rem;
+    background: #eeeeee;
+    margin-bottom: .7rem;
+}
+
+.block.anli .list-item ul li .pic {
+    width: 100%;
+    height: 4.65rem;
+}
+
+.block.anli .list-item ul li .pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.block.anli .list-item ul li .con {
+    padding: 0 .2rem;
+}
+
+.block.anli .list-item ul li span {
+    display: block;
+    font-size: .3rem;
+    line-height: .3rem;
+    color: #333333;
+    padding: .3rem 0;
+}
+
+.block.anli .list-item ul li p {
+    font-size: .24rem;
+    color: #666666;
 }
