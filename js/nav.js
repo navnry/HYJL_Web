@@ -7,7 +7,10 @@ $(".nav").on("click", function (e) {
 });
 $("#close-menu").on("click", function () {
     $(".nav").removeClass("open")
-})
+});
 $(".nav-wrapper").on("click", function (e) {
     e.stopPropagation()
-})
+}).on("touchmove", function (e) {
+    e.stopPropagation()
+});
+
