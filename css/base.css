@@ -81,7 +81,7 @@ ul:after,
 a {
     text-decoration: none;
     color: #fff;
-    font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+    /*font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;*/
 }
 
 a:hover {
